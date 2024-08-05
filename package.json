@@ -1,0 +1,19 @@
+{
+  "name": "jsx-loader-example",
+  "version": "1.0.0",
+  "main": "app/index.jsx",
+  "type": "module",
+  "scripts": {
+    "start": "node --import ./loader/register-hooks.mjs ./app/index.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@esbuild-kit/esm-loader": "^2.6.5",
+    "esbuild": "^0.23.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
