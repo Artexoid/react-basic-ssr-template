@@ -18,6 +18,6 @@ app.get('*', (req, res) => {
   res.status(200).send(render());
 });
 
-app.listen(4000, () => {
+app.listen(4000, '127.0.0.1', () => {
   console.log('server running on port 4000');
-})
+});
