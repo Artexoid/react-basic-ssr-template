@@ -27,6 +27,13 @@ node --import ./loader/register-hooks.mjs ./app/index.mjs
 
 This command will load your JSX files, transpile them to regular JavaScript, and create a bundle on the fly for server-side rendering.
 
+You can start it with PM2 using the following command:
+
+```bash
+pm2 start /root/.nvm/versions/node/VARSION/bin/node --cwd /var/www/ROOT_DIR -- --import ./loader/register-hooks.mjs ./app/index.mjs
+```
+
+
 ## File Structure
 
 - `loader/`: Contains the custom loader code.
