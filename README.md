@@ -1,5 +1,5 @@
 
-# JSX Loader for Node.js
+# React Basic SSR Template
 
 This project provides a comprehensive template for setting up server-side rendering (SSR) with React. It includes a custom loader for handling `.jsx` files in Node.js, an on-the-fly bundler for both server and client code, and an example implementation of SSR, including bundle generation for the browser and hydration.
 
