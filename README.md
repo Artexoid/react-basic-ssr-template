@@ -22,7 +22,7 @@ To use this loader, you need to have Node.js 20.15.0+ installed.
 You can run your Node.js project with this loader by using the following command:
 
 ```bash
-node --import ./loader/register-hooks.mjs ./app/index.jsx
+node --import ./loader/register-hooks.mjs ./app/index.mjs
 ```
 
 This command will load your JSX files, transpile them to regular JavaScript, and create a bundle on the fly for server-side rendering.
