@@ -1,15 +1,15 @@
 
 # JSX Loader for Node.js
 
-This is a simple project that implements a custom loader for handling `.jsx` modules in Node.js. The loader uses `esbuild` to transpile JSX files on the fly.
+This project provides a comprehensive template for setting up server-side rendering (SSR) with React. It includes a custom loader for handling `.jsx` files in Node.js, an on-the-fly bundler for both server and client code, and an example implementation of SSR, including bundle generation for the browser and hydration.
 
 ## Installation
 
-To use this loader, you need to have Node.js 20.15+ installed.
+To use this loader, you need to have Node.js 20.15.0+ installed.
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/Artexoid/jsx-loader-example.git
+    git clone https://github.com/Artexoid/react-basic-ssr-template.git
     ```
 
 2. Install the dependencies:
@@ -25,7 +25,7 @@ You can run your Node.js project with this loader by using the following command
 node --import ./loader/register-hooks.mjs ./app/index.jsx
 ```
 
-This command will load your JSX files and transpile them to regular JavaScript using the custom loader.
+This command will load your JSX files, transpile them to regular JavaScript, and create a bundle on the fly for server-side rendering.
 
 ## File Structure
 
