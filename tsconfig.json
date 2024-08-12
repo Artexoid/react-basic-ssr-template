@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "typeRoots": [
+      "./types",
+      "node_modules/@types"
+    ],
+    "jsx": "react-jsx",
+    "inlineSourceMap": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "importHelpers": true,
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "preserveValueImports": true,
+    "noEmit": true,
+    "baseUrl": "./app",
+    "paths": {
+      "/": ["./"],
+      "/*": ["./*"],
+    }
+  },
+  "include": [
+    "./app",
+    "./types"
+  ],
+  "exclude": ["node_modules"]
+}

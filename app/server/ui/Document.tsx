@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { type FC, type PropsWithChildren } from 'react';
 
-const Document = (props) => {
+const Document: FC<PropsWithChildren> = (props) => {
   const { children } = props;
 
   return (

@@ -1,11 +1,11 @@
 {
-  "name": "jsx-loader-example",
+  "name": "react-basic-ssr-template",
   "version": "1.0.0",
-  "main": "app/index.mjs",
+  "main": "app/index.ts",
   "type": "module",
   "scripts": {
-    "start": "node --import ./loader/register-hooks.mjs ./app/index.mjs",
-    "dev": "nodemon --ext mjs,jsx --exec \"node --import ./loader/register-hooks.mjs ./app/index.mjs\"",
+    "start": "node --import tsx ./app/index.ts",
+    "dev": "tsx --watch ./app/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +16,13 @@
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tsx": "^4.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
   }
 }

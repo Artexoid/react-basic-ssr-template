@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { type FC } from 'react';
 import { useCallback } from 'react';
 
-const HelloJSX = (props) => {
+export type AppProps = {
+  test?: string,
+}
+
+const App: FC<AppProps> = (props) => {
   const {
     test
   } = props;
@@ -18,4 +22,4 @@ const HelloJSX = (props) => {
   );
 }
 
-export default HelloJSX;
+export default App;

@@ -1,7 +1,7 @@
 import esbuild from 'esbuild';
 import { join } from 'path';
 
-export const make = async (basedir, entryPoint) => {
+export const make = async (basedir: string, entryPoint: string) => {
   try {
     const result = await esbuild.build({
       entryPoints: [join(basedir, entryPoint)],
